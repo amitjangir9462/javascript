@@ -33,3 +33,13 @@ Reference ( Non Primitive datatypes)
   }
   console.log(myfunction)
 */
+
+
+/*
+memory
+
+Stack(primitive)
+
+Heap(non primitive)
+
+*/
