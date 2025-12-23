@@ -10,7 +10,6 @@ let username // typeof undefined -> undefined
 
 //symbol
 //bigInt
- 
 
 console.log(typeof number)
 console.log(typeof string)
