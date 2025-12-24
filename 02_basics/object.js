@@ -1,4 +1,5 @@
-
+// Object Singleton
+//Object literals
 
 let mySml = Symbol("Key1")
 const Objects = {
