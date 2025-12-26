@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body>
+    <h2>Hii Events</h2>
+    <ul>
+        <li><img id="photoshop" width="200px" src="https://pixabay.com/photos/christmas-hot-cocoa-cozy-winter-8453173/"
+                alt=""></li>
+        <li><img id="japan" width="200px" src="https://pixabay.com/photos/christmas-baby-tree-cute-cold-cap-9980861/"
+                alt=""></li>
+        <li><img id="river" width="200px" src="https://pixabay.com/photos/amaryllis-flower-nature-branch-9976214/"
+                alt=""></li>
+        <li><img id="owl" width="200px" src="https://pixabay.com/photos/ganges-varanasi-bridge-river-foggy-10021683/"
+                alt=""></li>
+        <li><img id="prayer" width="200px" src="https://pixabay.com/photos/mountain-winter-snow-landscape-8487679/"
+                alt=""></li>
+        <li><a style="color: aliceblue;" href="https:/google.com" id="google"></a></li>
+    </ul>
+</body>
+<script>
+    // document.getElementById("owl").onclick=function(){
+    //     alert("Owl clicked")
+    // }
+
+
+    // document.getElementById("owl").addEventListener("click",function(){
+    //     alert("owl clicked again")
+    // })
+
+    // document.getElementById("japan").addEventListener("click",function(e){
+    //     console.log("click inside the ul")
+    // },false)
+    // document.getElementById("owl").addEventListener("click",function(e){
+    //     console.log(e)
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById("google").addEventListener("click",function(e){
+    //     e.preventDefault()
+    //     console.log("google clicked")
+        
+    // })
+
+
+
+//bubbling up :- niche se uppar
+//capturing mode :- uppar se niche
+
+
+    //type , timestamp , defaultPrevented
+    //target , toElement, srcElement , currentTarget ,
+    //clientX, clientY , screenX,screenY
+    //altkey , ctrlkey , shiftkey , keyCode 
+
+    //attachEvent()
+    //jQ uery - on
+
+
+
+
+
+     document.querySelector("#japan").addEventListener("click",function(e){
+        // console.log(e.target.parentNode)
+        console.log(e.target.tagName)
+        if(e.target.tagName === "IMG"){
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+     })
+
+</script>
+
+</html>
